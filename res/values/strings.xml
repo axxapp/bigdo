@@ -1,5 +1,8 @@
 <resources>
 
-    <string name="app_name">Bigdo</string>
+    <string name="app_name">大作为</string>
+
+    <color name="black">#333</color>
+    <color name="translucent_background">#5c000000</color>
 
 </resources>
