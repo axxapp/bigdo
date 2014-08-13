@@ -6,6 +6,7 @@
     android:orientation="vertical" >
 
     <RelativeLayout
+        android:id="@+id/top_tools_host"
         android:layout_width="fill_parent"
         android:layout_height="55dp"
         android:layout_alignParentTop="true"
@@ -30,6 +31,7 @@
             android:layout_toRightOf="@+id/top_tools_ico"
             android:drawableLeft="@drawable/glass_icon"
             android:drawablePadding="0dp"
+            android:hint="让直营人伟大起来"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:singleLine="true" />
@@ -39,6 +41,51 @@
             android:layout_height="1px"
             android:layout_alignParentBottom="true"
             android:background="#c1c4cd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/void_content_host"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/memu_host"
+        android:layout_below="@id/top_tools_host" >
+
+        <RelativeLayout
+            android:id="@+id/void_host"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="5dp"
+            android:background="#cbcbcb"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/home_top_video_default" >
+            </ImageView>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/void_host"
+            android:background="#c1c4cd" />
+
+        <com.bigdo.controls.XListView
+            android:id="@+id/video_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/v_line"
+            android:background="#ffffff"
+            android:cacheColorHint="#00000000"
+            android:choiceMode="singleChoice"
+            android:divider="@drawable/list_bg_divider"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" >
+        </com.bigdo.controls.XListView>
     </RelativeLayout>
 
     <LinearLayout
@@ -131,8 +178,20 @@
         android:background="#ffffff"
         android:clickable="true"
         android:focusable="true"
+        android:focusableInTouchMode="true"
         android:scaleType="center"
         android:src="@drawable/logo"
-        android:visibility="gone" />
+        android:visibility="gone" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <requestFocus />
+    </LinearLayout>
 
 </RelativeLayout>

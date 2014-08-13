@@ -4,6 +4,13 @@
     <string name="menu_home">首页</string>
     <string name="menu_bx">百宝箱</string>
     <string name="menu_me">我</string>
+    <string name="xlistview_header_hint_normal">使劲!</string>
+    <string name="xlistview_header_hint_ready">释放刷新</string>
+    <string name="xlistview_header_hint_refreshing">刷新中&#8230;</string>
+    <string name="xlistview_header_hint_loading">加载中&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">使劲!</string>
+    <string name="xlistview_footer_hint_ready">释放加载</string>
 
     <color name="top_tools_host_bg">#f9f9f9</color>
     <color name="black">#333</color>
