@@ -5,11 +5,134 @@
     android:background="#ffffff"
     android:orientation="vertical" >
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/top_tools_host_bg" >
+
+        <ImageView
+            android:id="@+id/top_tools_ico"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/applogo" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/top_tools_ico"
+            android:drawableLeft="@drawable/glass_icon"
+            android:drawablePadding="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#c1c4cd" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/memu_host"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/memu_host_bg"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c1c4cd" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ra_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/menu_home_press"
+                    android:gravity="center_horizontal"
+                    android:text="@string/menu_home"
+                    android:textColor="@color/menu_selected_fc"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ra_msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/menu_bx"
+                    android:gravity="center_horizontal"
+                    android:text="@string/menu_bx"
+                    android:textColor="@color/menu_selected_fc"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ra_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/menu_me"
+                    android:gravity="center_horizontal"
+                    android:text="@string/menu_me"
+                    android:textColor="@color/menu_selected_fc"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/splash_log_main_activity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:focusable="true"
         android:scaleType="center"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo"
+        android:visibility="gone" />
 
 </RelativeLayout>

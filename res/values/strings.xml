@@ -1,8 +1,14 @@
 <resources>
 
     <string name="app_name">大作为</string>
+    <string name="menu_home">首页</string>
+    <string name="menu_bx">百宝箱</string>
+    <string name="menu_me">我</string>
 
+    <color name="top_tools_host_bg">#f9f9f9</color>
     <color name="black">#333</color>
     <color name="translucent_background">#5c000000</color>
+    <color name="memu_host_bg">#f9f9f9</color>
+    <color name="menu_selected_fc">#0081cc</color>
 
 </resources>

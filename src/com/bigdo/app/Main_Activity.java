@@ -16,6 +16,7 @@ public class Main_Activity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main_activity);
 		splash_log = (ImageView) findViewById(R.id.splash_log_main_activity);
+		splash_log.setVisibility(ImageView.VISIBLE);
 		new Handler().postDelayed(new Runnable() {
 			@Override
 			public void run() {
